@@ -1,3 +1,5 @@
+package com.tempdecal.leetcode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +9,7 @@ public class FizzBuzz {
         for (int i = 0; i < n; i++) {
             if (i % 3 == 0 && i >= 3) {
                 if (n % 5 == 0) {
-                    answerList.add("FizzBuzz");
+                    answerList.add("com.tempdecal.leetcode.FizzBuzz");
                 } else {
                     answerList.add("Fizz");
                 }

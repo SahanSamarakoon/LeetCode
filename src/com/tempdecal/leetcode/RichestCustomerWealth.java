@@ -1,3 +1,5 @@
+package com.tempdecal.leetcode;
+
 import java.util.Arrays;
 
 public class RichestCustomerWealth {

@@ -1,3 +1,5 @@
+package com.tempdecal.leetcode;
+
 public class NumberSteps {
     public int numberOfSteps(int num) {
         int steps =0;

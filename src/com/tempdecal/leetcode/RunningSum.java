@@ -1,3 +1,5 @@
+package com.tempdecal.leetcode;
+
 public class RunningSum {
     public int[] runningSum(int[] nums) {
         for (int i = 1; i < nums.length; i++){
