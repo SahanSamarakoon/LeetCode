@@ -1,4 +1,4 @@
-package com.tempdecal.leetcode;
+package com.tempdecal.leetcode.arrayhashing;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -8,16 +8,16 @@ import java.util.stream.Collectors;
 public class ContainsDuplicate {
     public static boolean solution(int[] nums) {
         Set<Integer> targetSet = Arrays.stream(nums).boxed().collect(Collectors.toSet());
-        return nums.length == targetSet.size() ? false : true;
+        return nums.length != targetSet.size();
     }
 
     public static boolean hashsetSolution(int[] nums) {
-        HashSet<Integer> hSet = new HashSet<Integer>();
-        for (int i = 0; i < nums.length; i++) {
-            if (hSet.contains(nums[i])) {
+        HashSet<Integer> hSet = new HashSet<>();
+        for (int num : nums) {
+            if (hSet.contains(num)) {
                 return true;
             }
-            hSet.add(nums[i]);
+            hSet.add(num);
         }
         return false;
     }

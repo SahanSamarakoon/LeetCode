@@ -1,4 +1,4 @@
-package com.tempdecal.leetcode;
+package com.tempdecal.leetcode.arrayhashing;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -24,7 +24,7 @@ public class TwoSum {
         return outputList;
     }
 
-    public static int findIndex(int arr[], int t) {
+    public static int findIndex(int[] arr, int t) {
         int index = Arrays.binarySearch(arr, t);
         return (index < 0) ? -1 : index;
     }
@@ -44,6 +44,7 @@ public class TwoSum {
     public static void main(String[] args) {
         int[] nums = {3,2,4,5,8,7,1};
         int[] ans = twoSumHashMap(nums,13);
+        assert ans != null;
         System.out.println(ans[0]);
         System.out.println(ans[1]);
     }

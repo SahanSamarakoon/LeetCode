@@ -1,7 +1,7 @@
-package com.tempdecal.leetcode;
+package com.tempdecal.leetcode.linkedlist;
 
 public class MergeTwoSortedLists {
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    private static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null && list2 == null) return null;
         ListNode newNode = new ListNode();
         ListNode newHead = newNode;
@@ -64,8 +64,6 @@ public class MergeTwoSortedLists {
         listNode21.next = listNode23;
         listNode23.next = listNode25;
 
-
-
         ListNode j = mergeTwoLists(listNode11, listNode21);
         while (j != null) {
             System.out.println(j.val);
@@ -82,11 +80,6 @@ public class MergeTwoSortedLists {
 
         ListNode(int val) {
             this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
         }
     }
 }

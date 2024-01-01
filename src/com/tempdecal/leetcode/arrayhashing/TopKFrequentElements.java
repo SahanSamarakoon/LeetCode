@@ -1,4 +1,4 @@
-package com.tempdecal.leetcode;
+package com.tempdecal.leetcode.arrayhashing;
 
 import java.util.Arrays;
 import java.util.HashMap;

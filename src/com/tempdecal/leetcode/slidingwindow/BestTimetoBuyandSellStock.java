@@ -1,12 +1,12 @@
-package com.tempdecal.leetcode;
+package com.tempdecal.leetcode.slidingwindow;
 
 public class BestTimetoBuyandSellStock {
     public static int maxProfit(int[] prices) {
         int maxProfit = 0;
         int localMinPrice = prices[0];
-        for (int i = 0; i < prices.length; i++) {
-            if (prices[i]<localMinPrice) localMinPrice=prices[i];
-            if (prices[i]-localMinPrice>maxProfit) maxProfit=prices[i]-localMinPrice;
+        for (int price : prices) {
+            if (price < localMinPrice) localMinPrice = price;
+            if (price - localMinPrice > maxProfit) maxProfit = price - localMinPrice;
         }
         return maxProfit;
     }

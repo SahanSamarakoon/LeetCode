@@ -1,6 +1,5 @@
-package com.tempdecal.leetcode;
+package com.tempdecal.leetcode.stack;
 
-import java.util.List;
 import java.util.Stack;
 
 public class ValidParentheses {
